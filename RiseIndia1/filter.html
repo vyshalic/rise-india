@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+ 
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+        <title>Rise India</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+            }
+            h2{
+                background-color: #166c9a;
+                color:white;
+                padding-top: 100px;
+                padding-left: 23px;
+                padding-bottom: 20px;
+
+            }
+            h3{
+                height:5%;
+                background-color: #2298d7;
+                color:white;
+                padding:20px;
+            }
+            form{
+                width: 500px;
+                margin: 0 auto;
+                margin-top: 62px;
+
+            }
+            .filter1,.filter2,.filter3{
+                height: 80px;
+                margin: 10px;
+                font-size: 22px;
+            }
+            form select{
+                float: right;
+                width: 68%;
+                float: right;
+                width: 77%;
+                height: 80px;
+            }
+            .f1,.f2,.f3{
+               background-color: #289240;
+                color: white;
+                padding: 25px;
+                width: 23%;
+                float: left;
+                border-top-left-radius: 127%;
+                border-bottom-left-radius: 103%;
+            }
+            .f1{
+                background-color: #ddc311;
+            }
+            .f2{
+                background-color:  #dd5811;
+            }
+            .f3{
+                background-color: #c82723;
+            }
+            #go{
+                width: -moz-available;
+                height: 75px;
+                font-size: 30px;
+                border: none;
+                background-color: #1e80ae;
+                color: white;
+            }
+            
+             .icon-bar {
+                    width: 90px; /* Set a specific width */
+                    background-color: #555; /* Dark-grey background */
+                    float: left;
+                    height: 100%;
+                    position: absolute;
+                }
+
+                .icon-bar a {
+                    display: block; /* Make the links appear below each other instead of side-by-side */
+                    text-align: center; /* Center-align text */
+                    padding: 16px; /* Add some padding */
+                    transition: all 0.3s ease; /* Add transition for hover effects */
+                    color: white; /* White text color */
+                    font-size: 36px; /* Increased font-size */
+                }
+
+                .icon-bar a:hover {
+                    background-color: #000; /* Add a hover color */
+                }
+                 .fa-chart-area,.fa-power-off,.fa-user-circle{
+                    color: #87c323;
+                }
+                .fa-trophy{
+                    color: gold;
+                }
+                .fa-chart-area,.fa-power-off,.fa-user-circle,.fa-trophy{
+                    margin-top:50px;
+                }
+            
+            #entire{
+                border: none;
+
+                padding: 25px;
+
+                font-size: 41sp;
+
+                font-size: large;
+
+                margin-left: 27px;
+
+                background: crimson;
+
+                color: white;
+
+                border-radius: 25px;
+            }
+            .header{
+                    margin-left: 6%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="icon-bar">
+            <a href="geochart.php"><i class="fas fa-chart-area"></i></a>
+            <a href="filter.html" class="active"><i class="fas fa-trophy"></i></a>
+             <a href="user_chat/admininterface.php"><i class="fas fa-comments"></i></a>
+            <a href="#"><i class="fas fa-power-off"></i></a>
+          </div>
+        <div class="header"><h2>Welcome , admin! </h2><hr>
+         <div class="vis">
+        <div id="google_translate_element"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            
+            <h3>Choose any one filter below to view the candidates:</h3>
+        </div>
+        <div class="filter" class="container">
+            <form action="index.php" method="post">
+                <div class="filter1" >
+                    <div class="f1">STATE:</div>
+                <select name="state" id="state">
+                    <option value="">------------Select State------------</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Orissa">Orissa</option>
+                                <option value="Pondicherry">Pondicherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttaranchal">Uttaranchal</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
+                </select></div> 
+                <br><br>
+                <div class="filter2">
+                    <div class="f2">SPORT:</div>
+                <select name="Sports" data-style="btn-success">
+                     <option value="">------------Select Sport------------</option>
+                    <option>Soft Tennis</option>
+                    <option>Athletics</option>
+                    <option>Atya Patya</option>
+                    <option>Badminton</option>
+                    <option>Ball Badminton</option>
+                    <option>Baseball</option>
+                    <option>Billiards & Snookers</option>
+                    <option>Body Building</option>
+                    <option>Boxing</option>
+                    <option>Bridge</option>
+                    <option>Chess</option>
+                    <option>Cycling</option>
+                    <option>Deaf Sport</option>
+                    <option>Fencing</option>
+                    <option>Football</option>
+                    <option>Golf</option>
+                    <option>Handbolf</option>
+                    <option>Hockey</option>
+                    <option>Jump Rope</option>
+                    <option>Kabaddi</option>
+                    <option>Kayaking &Canoeing</option>
+                    <option>Karate</option>
+                    <option>Kho-Kho</option>
+                    <option>Mallakhamb</option>
+                    <option>Motor-Sports</option>
+                    <option>Para-sport</option>
+                    <option>Polo</option>
+                    <option>Power-lifting</option>
+                    <option>Roll-Ball</option>
+                    <option>Rollerskating</option>
+                    <option>Rowing</option>
+                    <option>Rugby</option>
+                    <option>School Games</option>
+                    <option>Sepaktakraw </option>
+                    <option></option>
+                    <option>Shooting</option>
+                    <option>Softballl</option>
+                    <option>Squash</option>
+                    <option>Swimming</option>
+                    <option>Table-Tennis</option>
+                    <option>Tenni-Koit</option>
+                    <option>Ten-pin Bowling</option>
+                    <option>Triathlon</option>
+                    <option>Tug-Of-War</option>
+                    <option>Weight-Lifting</option>
+                    <option>Wrestling</option>
+                    <option>Wushu</option>
+                </select></div>
+                <br><br>
+                <div class="filter3">
+                    <div class="f3">AGE:</div>
+                <select name="Age" data-style="btn-warning">
+                     <option value="">------------Select Age------------</option>
+                    <option>15-19</option>
+                    <option>20-25</option>
+                    <option>26-30</option>
+                </select></div>
+                <br><br>
+                
+                <input type="submit" id="go" value="Go!" name="filter" />
+            </form>
+        </div>
+        
+        <script type="text/javascript">
+            function redir() {
+              window.location = "fullresults.php";
+            }
+          </script>
+    </body>
+</html>

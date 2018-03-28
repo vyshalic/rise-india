@@ -1,0 +1,624 @@
+<html>
+<head>
+	<!-- Meta tags -->
+	<title>Rise India</title>
+	<meta name="keywords" content="registration of tribals in sports" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="//fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        <style>
+            
+        body {
+                padding: 0;
+                margin: 0;
+                font-family: 'Alegreya Sans', sans-serif;
+
+        }
+        body a {
+                transition: 0.5s all;
+                -webkit-transition: 0.5s all;
+                -moz-transition: 0.5s all;
+                -o-transition: 0.5s all;
+                -ms-transition: 0.5s all;
+                text-decoration: none;
+        }
+        body a:hover {
+                text-decoration: none;
+        }
+        body a:focus, a:hover {
+                text-decoration: none;
+        }
+        input[type="button"], input[type="submit"] {
+                transition: 0.5s all;
+                -webkit-transition: 0.5s all;
+                -moz-transition: 0.5s all;
+                -o-transition: 0.5s all;
+                -ms-transition: 0.5s all;
+        }
+        h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+                padding: 0;
+                font-family: 'Alegreya Sans', sans-serif;
+        }
+        p {
+                margin: 0;
+        }
+        ul {
+                margin: 0;
+                padding: 0;
+        }
+        li {
+                list-style-type:none
+        }
+        label {
+                margin: 0;
+        }
+        a:focus, a:hover {
+                text-decoration: none;
+                outline: none;
+        }
+       
+        .heading {
+            text-align: center;
+                    margin-bottom: 25px;
+                        letter-spacing: 1px;
+        }
+        .heading h1 {
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-weight: 500;
+                font-size: 50px;
+        }
+        .heading h2 {
+            font-weight: 400;
+        }
+        .heading p {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .container {
+                width: 43%;
+            margin: auto;
+            padding: 30px 30px 20px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        label.form-label {
+            display: inline-block;
+            width: 27%;
+                font-weight: 400;
+                letter-spacing: 1px;
+                vertical-align: top;
+        }
+        .form-input {
+            display: inline-block;
+            width: 72%;
+        }
+        .name .form-input {
+            display: inline-block;
+            width: 72%;
+        }
+        ul.field-list li {
+            margin: 15px 0px;
+        }
+        select {
+            width: 98.4%;
+            padding: 12px 10px;
+            color: #666;
+            border: none;
+            font-size: 15px;
+                font-family: 'Alegreya Sans', sans-serif;
+            background-color: #fff;
+        }
+        input[type="text"]:focus, input[type="email"]:focus,select:focus {
+            outline: none;
+        }
+
+        input[type="text"],input[type="email"],input[type="textarea"]{
+         /*   margin: 15px 0px; */
+            padding: 12px 10px;
+                box-sizing: border-box;
+                background-color: #fff;
+                font-size: 15px;
+                border: none;
+                width: 98.6%;
+                color: #333;
+                font-family: 'Alegreya Sans', sans-serif;
+        }
+        span.form-sub-label input[type="text"] {
+            margin: 0px 0px 15px 0;
+                width: 49%;
+        }
+
+        span.last input[type="text"] {
+            margin: 0px 0px 0px 0;
+        }
+        .name span.form-sub-label input[type="text"],.dob span.form-sub-label input[type="text"] {
+            margin-bottom: 0;
+        }
+        span.form-required {
+            color: #fff;
+        }
+
+        label.form-label1 {
+            display: inline-block;
+            margin: 15px 0px;
+                letter-spacing: 1px;
+        }
+        label.type-of-test {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+                letter-spacing: 1px;
+                font-weight: 100;
+                    font-size: 14px;
+        }
+        textarea {
+            width: 98%;
+                background-color: rgba(255, 255, 255, 0.63);
+        }
+        .submit_btn{
+                text-align: right;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+                width: 72.5%;
+            padding: 10px 40px;
+            margin-top: 5px;
+                font-size: 16px;
+                background-color: #007cc0;
+            border: 1px solid #007cc0;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+                outline: 0;
+                cursor: pointer;
+                font-family: 'Alegreya Sans', sans-serif;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffc168;
+            border: 1px solid #ffc168;
+            color: #000;
+        }
+        input.year {
+                width: 31% !important;
+        }
+        input[type="checkbox"] {
+            vertical-align: middle;
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #444;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+          color: #444;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          color: #444;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+          color: #444;
+        }
+        .copyright p {
+            text-align: center;
+            padding: 15px 5px;
+                letter-spacing: 1px;
+            font-size: 16px;
+        }
+        .copyright a {
+            color: #fff;
+        }
+        .copyright a:hover {
+            color: #ffc168;
+        }
+
+        @media screen and (max-width: 1366px){
+                .container {
+                        width: 45%;
+                }
+                .submit_btn {
+                        margin-right: 8px;
+                }
+                input[type="submit"] {
+                        width: 72%;
+                }
+        }
+        @media screen and (max-width: 1280px){
+                .heading h1 {
+                        font-size: 45px;
+                }
+        }
+        @media screen and (max-width: 1080px){
+                .container {
+                        width: 52%;
+                }
+        }
+        @media screen and (max-width: 991px){
+                .container {
+                        width: 55%;
+                }
+                .heading h1 {
+                        font-size: 42px;
+                }
+        }
+        @media screen and (max-width: 900px){
+                .container {
+                        width: 58%;
+                }
+                .heading h1 {
+                        font-size: 40px;
+                }
+        }
+        @media screen and (max-width: 800px){
+                .container {
+                        width: 65%;
+                }
+                .heading h1 {
+                        font-size: 38px;
+                }
+        }
+        @media screen and (max-width: 768px){
+                .container {
+                        width: 70%;
+                }
+                .heading h1 {
+                        font-size: 36px;
+                }
+        }
+        @media screen and (max-width: 736px){
+                .container {
+                        width: 80%;
+                }
+        }
+        @media screen and (max-width: 640px){
+                .container {
+                        width: 85%;
+                }
+        }
+        @media screen and (max-width: 568px){
+                .container {
+                        width: 90%;
+                }
+                label.type-of-test {
+                        width: 40%;
+                }
+                label.form-sub-label1 {
+                        position: absolute;
+                        bottom: -28px;
+                        left: 5px;
+                        font-size: 13px;
+                        display: block;
+                }
+        }
+
+        @media screen and (max-width: 480px){
+                .heading h1 {
+                        font-size: 33px;
+                }
+                .container {
+                        width: 95%;
+                        padding: 17px 10px 20px;
+                }
+                label.form-label {
+                        font-size: 15px;
+                }
+                .heading h2 {
+                        font-size: 1.3em;
+                }
+                .copyright p {
+                        line-height: 26px;
+                }
+        }
+        @media screen and (max-width: 414px){
+                .form-input {
+                        width: 100%;
+                }
+                label.form-label {
+                width: 100%;
+                        margin-bottom: 7px;
+                }
+                input.year {
+                        width: 41% !important;
+                }
+                label.form-sub-label1 {
+                        bottom: -22px;
+                        left: 4px;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                }
+                .heading h2 {
+                         font-size: 22px;
+                }
+                input[type="email"] {
+                         width: 99%;
+                }
+                textarea {
+                        width: 97%;
+                }
+                input[type="text"], input[type="email"],select {
+                        padding: 10px 10px;
+                }
+                .name .form-input {
+                        width: 100%;
+                }
+                input[type="submit"] {
+                        width: 100%;
+                }
+                .submit_btn {
+                        margin-right: 4px;
+                }
+                select {
+                        padding-right: 0;
+                }
+                .heading h1 {
+                        font-size: 29px;
+                }
+                .heading h2 {
+                        font-size: 20px;
+                }
+                .heading p {
+                        font-size: 15px;
+                        margin-top: 10px;
+                }
+        }
+
+        @media screen and (max-width: 384px){
+
+                .heading h1 {
+                        margin-bottom: 20px;
+                        font-size: 30px;
+                }
+                .heading h1 {
+                        font-size: 28px;
+                }
+        }
+
+        @media screen and (max-width: 375px){
+
+                label.type-of-test {
+                        width: 40%;
+                        margin-left: 5px;
+                }
+                label.form-sub-label1 {
+                        bottom: -25px;
+                }
+                input.year {
+                        width: 39% !important;
+                }
+                .heading h2 {
+                        font-size: 20px;
+                }
+                .heading p {
+                        font-size: 15px;
+                        margin-top: 15px;
+                }
+                .heading h1 {
+                        font-size: 26px;
+                }
+                .copyright p {
+                        font-size: 15px;
+                }
+
+        }
+
+        @media screen and (max-width: 320px){
+                .heading h1 {
+                        margin-bottom: 20px;
+                        font-size: 24px;
+                }
+                .heading h2 {
+                        font-size: 17px;
+                }
+                .heading p {
+                        font-size: 13px;
+                        margin-top: 15px;
+                }
+                span.form-sub-label input[type="text"] {
+                        width: 99%;
+                }
+                        span.last input[type="text"] {
+                        margin: 0px 0px 15px 0;
+                }
+                label.type-of-test {
+                        width: 36%;
+                        margin-left: 7px;
+                        font-size: 14px;
+                }
+                input[type="text"] {
+                        width: 99%;
+                }
+                label.form-label1 {
+                        margin: 8px 0px;
+                }
+                .copyright p {
+                        font-size: 14px;
+                }
+                .name span.form-sub-label input[type="text"]:nth-child(1) {
+                        margin-bottom: 10px;
+                }
+                ul.field-list li {
+                        margin: 10px 0px;
+                }
+                input[type="submit"] {
+                        font-size: 15px;
+                        margin-top: 0px;
+                }
+        }
+
+        </style>
+
+
+</head>
+<body >
+  <script>
+//  var f1,f2,f3,f4,f5;
+    function display(that) {
+        if (that.value == "others") {
+          //  alert("check");
+            document.getElementById("ifOther").style.display = "block";
+        } else {
+            document.getElementById("ifOther").style.display = "none";
+        }
+    }
+    function sport1(){
+      //alert("Hello");
+    if(document.getElementsByName('sport_name')[0].value=="")
+    {
+      document.getElementById('sp1').innerHTML="** Please select your sport **";
+      f1=1;
+    }
+      else {
+        document.getElementById('sp1').innerHTML="";
+      }
+    }
+ function tr() {
+    //  alert("hi");
+      var a=document.getElementsByName('tSport')[0].value;
+      var x=new RegExp('^[a-zA-Z]+$');
+      if(a===" ")
+        document.getElementById('sp2').innerHTML="** Please enter your sport name **";
+      else if (x.test(a)) {
+        document.getElementById('sp2').innerHTML="";
+      }
+      else {
+        document.getElementById('sp2').innerHTML="** Please enter a valid sport name **";
+      }
+    }
+
+    function h() {
+      //alert("hello");
+      var a=document.getElementsByName('ht')[0].value;
+      var t=/\d{3}/;
+      if(a=="")
+        document.getElementById('sp3').innerHTML="** Please enter your height**";
+      else if (t.test(a)) {
+        document.getElementById('sp3').innerHTML="";
+      }
+      else {
+        document.getElementById('sp3').innerHTML="** Please enter your proper height **";
+      }
+    }
+    function w() {
+		//alert("hi");
+      var a=document.getElementsByName('wt')[0].value;
+			t=/\d{2}/;
+      if(a==" ")
+        document.getElementById('sp4').innerHTML="** Please enter your weight**";
+      else if (t.test(a)) {
+        document.getElementById('sp4').innerHTML="";
+      }
+      else {
+        document.getElementById('sp4').innerHTML="** Please enter your proper weight **";
+      }
+    }
+  </script>
+	<div class="container">
+		<div class="agile-form">
+  <form action="sports.php" method="post" enctype="multipart/form-data">
+  <label class="form-label">Sport <span class="form-required"> * </span></label>
+    <div class="form-input">
+    <!--	<input type="text" name="sport_name" placeholder="Enter your traditional sport" required>-->
+      <select name="sport_name" onchange="display(this)" onblur="sport1()">
+           <option name="sport_name" value="">Select Sport</option>
+          <option name="sport_name" value="soft tennis">Soft Tennis</option>
+          <option name="sport_name" value="athletics">Athletics</option>
+          <option name="sport_name" value="atya patya">Atya Patya</option>
+          <option name="sport_name" value="badminton">Badminton</option>
+          <option name="sport_name" value="ball badminton">Ball Badminton</option>
+          <option name="sport_name" value="baseball">Baseball</option>
+          <option name="sport_name" value="billiars and snookers">Billiards & Snookers</option>
+          <option name="sport_name" value="body building">Body Building</option>
+          <option name="sport_name" value="boxing">Boxing</option>
+          <option name="sport_name" value="bridge">Bridge</option>
+          <option name="sport_name" value="chess">Chess</option>
+          <option name="sport_name" value="cycling">Cycling</option>
+          <option name="sport_name" value="deaf sport">Deaf Sport</option>
+          <option name="sport_name" value="fencing">Fencing</option>
+          <option name="sport_name" value="football">Football</option>
+          <option name="sport_name" value="golf">Golf</option>
+          <option name="sport_name" value="handbolf">Handbolf</option>
+          <option name="sport_name" value="hockey">Hockey</option>
+          <option name="sport_name" value="jump rope">Jump Rope</option>
+          <option name="sport_name" value="kabbadi">Kabaddi</option>
+          <option name="sport_name" value="kayaking">Kayaking &Canoeing</option>
+          <option name="sport_name" value="karate">Karate</option>
+          <option name="sport_name" value="kho kho">Kho-Kho</option>
+          <option name="sport_name" value="mallakhamb">Mallakhamb</option>
+          <option name="sport_name" value="motor sports">Motor-Sports</option>
+          <option name="sport_name" value="para sport">Para-sport</option>
+          <option name="sport_name" value="polo">Polo</option>
+          <option name="sport_name" value="power lifting">Power-lifting</option>
+          <option name="sport_name" value="roll ball">Roll-Ball</option>
+          <option name="sport_name" value="rollerskating">Rollerskating</option>
+          <option name="sport_name" value="rowing">Rowing</option>
+          <option name="sport_name" value="rugby">Rugby</option>
+          <option name="sport_name" value="school games">School Games</option>
+          <option name="sport_name" value="sepaktakraw">Sepaktakraw </option>
+          <option name="sport_name" value="shooting">Shooting</option>
+          <option name="sport_name" value="softball">Softballl</option>
+          <option name="sport_name" value="squash">Squash</option>
+          <option name="sport_name" value="swimming">Swimming</option>
+          <option name="sport_name" value="table tennis">Table-Tennis</option>
+          <option name="sport_name" value="tenni koit">Tenni-Koit</option>
+          <option name="sport_name" value="ten pin bowling">Ten-pin Bowling</option>
+          <option name="sport_name" value="triathlon">Triathlon</option>
+          <option name="sport_name" value="tug of war">Tug-Of-War</option>
+          <option name="sport_name" value="weight lifting">Weight-Lifting</option>
+          <option name="sport_name" value="wrestling">Wrestling</option>
+          <option name="sport_name" value="wushu">Wushu</option>
+          <option name="sport_name" value="others">Others</option>
+      </select>
+      <span id="sp1" style="color:black"></span>
+    </div>
+    <br>
+    <br>
+    <div id="ifOther" style="display: none">
+    <label class="form-label">Your Sport<span class="form-required"> * </span></label>
+    <div class="form-input">
+      <span class="form-sub-label last">
+      <input type="text" name="tSport" placeholder="Traditional Sport"  onblur="tr()" >
+      <br><span id="sp2" style="color:white"></span>
+  </div>
+    <label class="form-label" >Description <span class="form-required"> * </span></label>
+    <div class="form-input">
+			<span class="form-sub-label last">
+      <textarea placeholder="Enter description of your sport" name="desc" >
+      </textarea>
+		</span>
+    </div>
+  </div>
+    <div>
+    <label class="form-label">Height <span class="form-required"> * </span></label>
+    <span class="form-sub-label last">
+      <input type="number" name="ht" placeholder="height" required onblur="h()">
+      <span >
+        <label>cm</label>
+      </span>
+    </span>
+		<br>
+  <span id="sp3" style="color:white"></span>
+  </div>
+  <br>
+  <div>
+  <label class="form-label">Weight <span class="form-required"> * </span></label>
+  <span class="form-sub-label last">
+    <input type="number" name="wt" placeholder="weight" required onblur="w()">
+    <span >
+      <label>Kg</label>
+    </span>
+  </span>
+  <br><span id="sp4" style="color:white"></span>
+</div>
+<div>
+  Description of Video: <input type="text" placeholder="Describe here" name="description_entered"/><br><br>
+  <input type="file" name="file"/><br><br>
+  <!--<input type="submit" name="submit" value="Upload"/>-->
+</div>
+  <input type="submit" name="submit" value="submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    background-image:url(new3.jpg);
+    background-repeat: no-repeat;
+    height:100%;
+    margin:0;
+    background-size:1500px 1200px;
+    background-position: center;
+   
+}
+.container{
+    width: 30%;
+    background-color:rgba(252, 252, 252, 0.3);
+    margin-top: 100px;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    
+
+}
+
+.form-control{
+    margin-top: 10px;
+    width: 380px;
+}
+
+
+.btn{
+    margin-top: 30px;
+}
+#box{
+    background-color: orangered;
+    height: 40px;
+    width: 40px;
+    margin: 4px;
+    
+}
+#w{
+    margin-left: 4px;
+}

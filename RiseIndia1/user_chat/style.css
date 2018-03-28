@@ -1,0 +1,68 @@
+@charset "utf-8";
+#chatbox
+{
+	width:100%;
+	height: 450px;
+	margin: 0 auto;
+	border-radius: 20px;
+	border-color: mediumspringgreen;
+	border:solid;
+	background-color: darkgray;
+
+}
+body
+{
+	background-image: url("4.jpeg");
+}
+div{
+		display:block;
+		color:green;
+		padding:10px;
+}
+#trial
+{
+	display: block;
+	color:yellow;
+	
+}
+#chatdisplay
+{
+	padding:10px;
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-image: url("5.jpeg");
+	
+
+}
+#mychatform
+{
+	text-align: center;
+
+}
+input[type="text"]
+{
+	width:40%;
+}
+textarea
+{
+	width:-webkit-fill-available;
+	padding:2px;
+	margin:3px;
+	font-family: cursive;
+	border-color: mediumspringgreen;
+	border-radius:20px ;
+	border:solid;
+}
+textarea:hover
+{
+	background: #fff;
+	shape-outside: ellipse(150px 300px at 50% 50%);
+}
+#sendmsgbtn
+{
+	width: 40%;
+	font-family: cursive;
+
+}

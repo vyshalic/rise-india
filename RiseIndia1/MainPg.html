@@ -1,0 +1,361 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	
+	<style type="text/css">
+	body{
+		margin:0;
+		padding: 0;
+		font-family: 'Oswald';
+	}
+#reg input[type=text], input[type=password]{
+	text-align: left;
+	padding: 8px;
+	margin-right: 20px;
+}
+#reg{
+	color:white;
+	float: right;
+	margin: 5px;
+}
+.loginblock{
+	float: right;
+    background: grey;
+    width:100%;
+    z-index: 30000;
+}
+.div1{
+	margin: 10px;
+}
+#loginbtn{
+	width: 124px;
+    height: 50px;
+    border: none;
+    background: crimson;
+    color: white;
+
+}
+h3{
+	    float: left;
+    color: white;
+    letter-spacing: 10px;
+    font-size: large;
+}
+video{
+	width: 100%;
+	height:100%;
+	color: white;
+	font-size: xx-large;
+	font-weight: bold;
+	left: 0px;
+	top: 0px;
+
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    overflow: hidden
+}
+.video-container{
+	 position: relative;
+  height: 100vh;
+}
+
+#reg1{
+	float: right;
+
+	width: 34%;
+
+	background: rgba(255, 249, 249, 0.9);
+
+	border-radius: 25px;
+
+	z-index: 30000;
+
+	position: static;
+
+	margin: 28dp;
+
+	margin: 60px;
+
+	font-size: x-large;
+
+	padding: 10px;
+}
+
+#reg1 input
+{
+   float: right;
+  border:0;
+  outline: 0;
+    background: transparent;
+  border-bottom: 2px solid #f5660c;
+
+}
+#reg1 input:focus
+{
+border-bottom:2px solid blue;
+caret-color:blue;
+outline:none;
+background-color:white;
+}
+#reg1 .button {
+  
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 140px;
+  height:50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 35%;
+  
+}
+
+#reg1 .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#reg1 .button:hover span {
+  padding-right: 25px;
+}
+
+#reg1 .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a{
+text-decoration:none;
+font-weight:bold;
+}
+#reg1 button:hover{
+border-radius:30px;
+}
+
+#reg1 label{
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    margin-left: 72px;
+    margin-bottom: 15px;
+
+}
+#reg1 input {
+  display: inline-block;
+	float: left;
+	font-size: x-large;
+	width: 52%;
+	padding: 29dp;
+	margin: 40px;
+}
+.errortext{
+	color: red;
+	font-size: small;
+}
+h4{
+	background-color: #0c2169;
+	color: white;
+	margin: 0px;
+	border-radius: 6px;
+	padding: inherit;
+}
+
+.goog-te-gadget-simple{
+    margin-top:62px;
+}
+	</style>
+        
+        
+</head>
+<body>
+  
+<div class="videocontainer">
+    
+
+<div class="loginblock">
+	<h3>RiseIndia</h3>
+	<form id="reg" name="reg" action="login.php" method="post">
+
+	<span class="div1">Username:</span><input type="text" id="username" name="name">
+	<span class="div1">Password:</span><input type="password" id="pass" name="pwd">
+	<button class="button" id="loginbtn" type="submit">Login</button>
+	</form>
+</div>
+    
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+
+<video width="100%" height="100%" autoplay muted loop>
+<source src="Sports Beauty - Slow Motion.mp4" type="video/mp4">
+</video>
+
+	<div class="content">
+                    <form id="reg1" name="reg" method="post" >
+                        <h4>Sign up to Apply!</h4>
+                    <input type="text" onblur="checkfname()" id="fname" name="fname" placeholder="First Name" ><br><br><span id ="ufname" style="color:red;font-weight:normal font-size:10px" ></span><br>
+                    <input type="text" onblur="checklname()" id="lname" name="lname" placeholder="Last Name"><br><br><span id="ulname" style="color:red;font-weight:normal"></span><br>
+                    <input type="text" onblur="checkname()" id="name" name="name" placeholder="Username" ><br><br><span id="uname" style="color:red;font-weight:normal"></span><br>
+                    <input type="password" onblur="checkpwd()" class="error" id="pwd" name="pwd" placeholder="Password"><br><br><span id="upwd" style="color:red;font-weight:normal"></span><br>
+                    <input type="password"  onblur="checksame()" class="error" id="cp" name="cpwd" placeholder="Confirm Password"><br><br><span id="ucp" style="color:red;font-weight:normal"></span><br>
+                    <br><br>
+                    <button class="button" type="submit" onclick="return check()">Register</button>
+                    </form>
+
+	</div>
+</div>
+
+<script>
+ var a1=0;
+  var a2=0;
+   var a3=0;
+    var a4=0;
+     var a5=0;
+      var a6=0;
+
+  function checkname()
+{
+var name=document.getElementById('name').value;
+//var a1;
+if(name=="")
+{
+  document.getElementById('uname').innerHTML="*please enter your name";
+//a1++;
+  //alert("name");
+}
+else
+{
+document.getElementById('uname').innerHTML="";
+a1=1;
+}
+}
+function checklen()
+{
+var pwd=document.getElementById('pwd').value;
+var cp=document.getElementById('cp').value;
+//var a=0;
+if(pwd.length<6)
+{
+document.getElementById('upwd').innerHTML="password is too short";
+//a++;
+}
+else
+{
+document.getElementById('upwd').innerHTML="";
+a2=1;
+//a=0;
+}
+}
+function checkpwd()
+{
+var pwd=document.getElementById('pwd').value;
+var cp=document.getElementById('cp').value;
+//var a=0;
+if(pwd=="")
+{
+  document.getElementById('upwd').innerHTML="*please enter the password";
+//a++;
+
+  //alert("pwd");
+}
+else
+{
+document.getElementById('upwd').innerHTML="";
+document.getElementById('pwd').onfocus=checklen();
+}
+}
+function checksame()
+{
+var pwd=document.getElementById('pwd').value;
+var cp=document.getElementById('cp').value;
+//var a=0;
+if(cp!="" && pwd!=cp)
+{
+document.getElementById('ucp').innerHTML="*password does not match";
+//a++;
+//alert(a);
+}
+else
+{
+document.getElementById('ucp').innerHTML="";
+a3=1;
+}
+}
+function checklname()
+{
+var lname=document.getElementById('lname').value;
+//var a=0;
+if(lname=="")
+{
+  document.getElementById('ulname').innerHTML="*please enter your last name";
+//a++;
+  //alert("ph");
+}
+else
+{
+
+  document.getElementById('ulname').innerHTML="";
+  a4=1;
+  //a=0;
+}
+}
+/*function checkcp()
+{
+var pwd=document.getElementById('pwd').value;
+var cp=document.getElementById('cp').value;
+//var a=0;
+if(cp=="")
+{
+  document.getElementById('ucp').innerHTML="*Cannot be empty";
+//a++;
+  //alert("cp");
+}
+else{
+document.getElementById('ucp').innerHTML="";
+a5=1;
+  //a=0;
+}
+}*/
+function checkfname()
+{
+var fname=document.getElementById('fname').value;
+//var a=0;
+
+if(fname=="")
+{
+document.getElementById('ufname').innerHTML="*please enter your first name";
+//a++;
+}
+else
+{
+document.getElementById('ufname').innerHTML="";
+a6=1;
+//a=0;
+}
+}
+function check()
+{
+if(a1==1 && a2==1 && a3==1 && a4==1 && a6==1)
+{
+
+  var x=document.getElementById('reg1');
+  x.action='reg.php';
+  return true;
+}
+return false;
+}
+</script>
+</body>
+</html>
+

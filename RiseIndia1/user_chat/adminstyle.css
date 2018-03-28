@@ -1,0 +1,32 @@
+body
+{
+	background-image:url("4.jpeg");
+
+}
+table
+{
+	margin-top:30px;
+}
+
+#un
+{
+	color:red;
+	padding:20px 
+}
+#rm
+{
+	color:blue;
+	padding: 20px;
+
+}
+#reply
+{
+	color:green;
+	height:40px;
+	border-radius: 12px;
+	border:blue;
+	border:solid;
+	
+}
+
+

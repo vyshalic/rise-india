@@ -1,0 +1,20 @@
+body{
+    background-image:url("new3.jpg");
+    background-repeat: no-repeat;
+    height:100%;
+    margin:0;
+    background-size:1500px 710px;
+    background-position: center;
+     display: flex;
+  justify-content: center;
+}
+#n1{
+    text-transform: uppercase;
+}
+#n{
+    font-family: "Times New Roman", Times, serif;
+font-size: 19px;
+color: white;
+    align:right;
+}
+
